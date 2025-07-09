@@ -109,4 +109,31 @@ def convert_data_structure(data, data_type="list"):
     data = list(data)
   return data
 
-print(help(convert_data_structure))
+
+# Define a function called concat
+def concat(*args):
+  
+  # Create an empty string
+  result = ""
+  
+  # Iterate over the Python args tuple
+  for arg in args:
+    result += " " + arg
+  return result
+
+# Call the function
+print(concat("Python", "is", "great!"))
+
+# Define a function called concat
+def concat(**kwargs):
+  
+  # Create an empty string
+  result = ""
+  
+  # Iterate over the Python kwargs
+  for kwarg in kwargs.values():
+    result += " " + kwarg
+  return result
+
+# Call the function
+print(concat(start="Python", middle="is", end="great!"))
