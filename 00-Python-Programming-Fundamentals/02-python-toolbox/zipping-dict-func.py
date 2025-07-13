@@ -13,7 +13,7 @@ def lists2dict(list1, list2):
     return rs_dict
 
 # Call lists2dict: rs_fxn
-rs_fxn = rs_dict(feature_names, row_vals)
+rs_fxn = lists2dict(feature_names, row_vals)
 
 # Print rs_fxn
 print(rs_fxn)
